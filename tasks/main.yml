@@ -1,0 +1,5 @@
+---
+
+- include: "nfs_client.yml"
+  tags:    [nfs-client]
+

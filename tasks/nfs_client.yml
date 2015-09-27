@@ -1,0 +1,10 @@
+---
+
+- name: "nfs-client:install:package | Installing the apt package."
+  apt: 
+    name:         "{{ item }}" 
+    state:        'latest'
+    update_cache: 'yes'
+  with_items:
+    - "{{ nfs_client_apt_package }}" 
+
